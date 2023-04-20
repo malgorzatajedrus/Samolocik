@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const registerLink = document.querySelector(".register-link");
 	const btnPopup = document.querySelector(".btnLogin");
 	const iconClose = document.querySelector(".icon-close");
+	const burgerIcon = document.querySelector(".navbar-toggler");
 
 	function addShadow() {
 		if (window.scrollY >= 300) {
@@ -21,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	);
 
 	window.addEventListener("scroll", addShadow);
+
+	function addShadowNav() {
+		nav.classList.add("shadow-bg");
+	}
+
+	burgerIcon.addEventListener("click", addShadowNav);
 
 	// logowanie/rejestracja //
 
@@ -100,7 +107,7 @@ function checkBoxLimit() {
 	}
 }
 
-// sprawdzenie czy wybrano taka sama ilosc miejsc w samolocie, co wybrana ilosc pasazerow // 
+// sprawdzenie czy wybrano taka sama ilosc miejsc w samolocie, co wybrana ilosc pasazerow //
 function checkSelectedSeats() {
 	function countSelectedSeats() {
 		const checkBoxGroup = document.forms["plane-seat"]["check[]"];
@@ -135,7 +142,7 @@ function checkSelectedSeats() {
 		selectedBtn.href = "reservationdetails.html";
 	}
 }
-// pobieranie danych z podstrony reservationdetails.html // 
+// pobieranie danych z podstrony reservationdetails.html //
 function getReservationDetails() {
 	const nameDetails = document.getElementById("pass-name").value;
 	const emailDetails = document.getElementById("email").value;
@@ -150,7 +157,7 @@ function getReservationDetails() {
 	return nameDetails, emailDetails, phoneDetails;
 }
 
-// przekazanie danych z podstrony reservationdetails.html do podstrony summary.html // 
+// przekazanie danych z podstrony reservationdetails.html do podstrony summary.html //
 function reservationSummary() {
 	const summaryName = sessionStorage.getItem("nameDetails");
 	const summaryEmail = sessionStorage.getItem("emailDetails");
@@ -168,8 +175,6 @@ function reservationSummary() {
 	document.getElementById("flight-date").innerHTML = summaryDate;
 	document.getElementById("seats-numbers").innerHTML = summarySeats;
 }
-
-
 
 function bookFlight() {
 	const email = sessionStorage.getItem("emailDetails");
