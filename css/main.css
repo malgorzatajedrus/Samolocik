@@ -525,6 +525,9 @@ header .fa-chevron-down {
   justify-content: center;
   align-items: center;
 }
+.reservation-details h3 {
+  text-align: center;
+}
 .reservation-details .details-boxes {
   display: flex;
   flex-direction: column;
@@ -538,7 +541,7 @@ header .fa-chevron-down {
   width: 400px;
 }
 
-@media (min-width: 320px) {
+@media (max-width: 374px) {
   header h1 {
     font-size: 36px;
   }
@@ -555,61 +558,125 @@ header .fa-chevron-down {
   }
   .plane-seats .btn-submitSeats {
     transform: scale(0.8);
+    bottom: 20px;
   }
   .reservation-details {
     transform: scale(0.7);
   }
 }
-@media (min-width: 768px) {
-  nav .navbar-brand {
-    position: relative;
-    transform: scale(1.3);
-    left: 5%;
-  }
-  nav i.fas.fa-bars {
-    position: relative;
-    transform: scale(1.3);
-    left: 5%;
-  }
-  nav a.nav-link {
-    transform: scale(1.3);
-  }
-  nav .btnLogin {
-    transform: scale(1.3);
-    margin-top: 10px;
-    margin-right: 90px;
-    margin-left: 90px;
-  }
+@media (min-width: 375px) {
   header h1 {
-    font-size: 42px;
-    margin-bottom: 30px;
+    font-size: 36px;
   }
   header p {
-    font-size: 30px;
-    margin-bottom: 30px;
+    font-size: 16px;
   }
-  header .btn-outline-light {
-    font-size: 25px;
+  .wrapper {
+    width: 320px;
+    height: 460px;
+    z-index: 15;
+  }
+  .plane {
+    transform: scale(0.6);
+  }
+  .plane-seats .btn-submitSeats {
+    transform: scale(0.8);
+    bottom: 40px;
+  }
+  .reservation-details {
+    transform: scale(0.7);
+  }
+}
+@media (min-width: 413px) {
+  header h1 {
+    font-size: 36px;
+  }
+  header p {
+    font-size: 16px;
+  }
+  .wrapper {
+    width: 320px;
+    height: 460px;
+    z-index: 15;
+  }
+  .plane {
+    transform: scale(0.6);
+  }
+  .plane-seats .btn-submitSeats {
+    transform: scale(0.8);
+    bottom: 8px;
+  }
+  .reservation-details {
+    transform: scale(0.7);
+  }
+}
+@media (min-width: 414px) and (max-width: 766px) {
+  .wrapper {
+    width: 320px;
+    height: 460px;
+    z-index: 15;
+  }
+  .plane {
+    transform: scale(0.8);
+  }
+  .plane-seats .btn-submitSeats {
+    transform: scale(0.9);
+    bottom: 25px;
+  }
+  .reservation-details {
+    transform: scale(0.8);
+  }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .plane {
+    transform: scale(1);
+  }
+  .plane-seats .btn-submitSeats {
+    transform: scale(1);
+    bottom: 60px;
   }
   .wrapper {
     width: 420px;
     height: 460px;
+  }
+  .reservation-details {
+    transform: scale(1);
   }
 }
 @media (min-width: 992px) {
   nav {
     height: 82px;
   }
+  .plane {
+    transform: scale(1);
+  }
+  .plane-seats .btn-submitSeats {
+    transform: scale(1);
+    bottom: 150px;
+  }
   .wrapper {
     width: 420px;
     height: 460px;
+  }
+  .reservation-details {
+    transform: scale(1);
   }
 }
 @media (min-width: 1200px) {
   header .hero-img {
     background-image: url("../img/passport_big.jpg");
   }
+  .plane {
+    transform: scale(1);
+  }
+  .plane-seats .btn-submitSeats {
+    transform: scale(1);
+    bottom: 50px;
+  }
   .directions {
     background-image: url("../img/sky-gee33acaa0_1920.jpg");
+  }
+  .reservation-details {
+    transform: scale(1);
   }
 }/*# sourceMappingURL=main.css.map */

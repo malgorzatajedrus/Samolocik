@@ -17,17 +17,19 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	}
 
+	function addShadowNav() {
+		nav.classList.add("shadow-bg");
+	}
+
+	burgerIcon.addEventListener("click", addShadowNav);
+
 	allNavItems.forEach((item) =>
 		item.addEventListener("click", () => navList.classList.remove("show"))
 	);
 
 	window.addEventListener("scroll", addShadow);
 
-	function addShadowNav() {
-		nav.classList.add("shadow-bg");
-	}
-
-	burgerIcon.addEventListener("click", addShadowNav);
+	
 
 	// logowanie/rejestracja //
 
