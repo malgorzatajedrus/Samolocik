@@ -420,7 +420,7 @@ header .fa-chevron-down {
 
 .plane-seats .btn-submitSeats {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
 }
 
 .plane {
@@ -557,7 +557,6 @@ header .fa-chevron-down {
   }
   .plane-seats .btn-submitSeats {
     transform: scale(0.8);
-    bottom: 20px;
   }
   .reservation-details {
     transform: scale(0.7);
@@ -580,7 +579,6 @@ header .fa-chevron-down {
   }
   .plane-seats .btn-submitSeats {
     transform: scale(0.8);
-    bottom: 40px;
   }
   .reservation-details {
     transform: scale(0.7);
@@ -603,7 +601,6 @@ header .fa-chevron-down {
   }
   .plane-seats .btn-submitSeats {
     transform: scale(0.8);
-    bottom: 8px;
   }
   .reservation-details {
     transform: scale(0.7);
@@ -620,7 +617,7 @@ header .fa-chevron-down {
   }
   .plane-seats .btn-submitSeats {
     transform: scale(0.9);
-    bottom: 25px;
+    bottom: 0px;
   }
   .reservation-details {
     transform: scale(0.8);
@@ -628,11 +625,10 @@ header .fa-chevron-down {
 }
 @media (min-width: 767px) and (max-width: 991px) {
   .plane {
-    transform: scale(1);
+    transform: scale(0.8);
   }
   .plane-seats .btn-submitSeats {
-    transform: scale(1);
-    bottom: 60px;
+    transform: scale(0.9);
   }
   .wrapper {
     width: 420px;
@@ -651,7 +647,6 @@ header .fa-chevron-down {
   }
   .plane-seats .btn-submitSeats {
     transform: scale(1);
-    bottom: 150px;
   }
   .wrapper {
     width: 420px;
@@ -666,11 +661,27 @@ header .fa-chevron-down {
     background-image: url("../img/passport_big.jpg");
   }
   .plane {
+    transform: scale(0.8);
+  }
+  .plane-seats .btn-submitSeats {
+    transform: scale(0.9);
+  }
+  .directions {
+    background-image: url("../img/sky-gee33acaa0_1920.jpg");
+  }
+  .reservation-details {
+    transform: scale(1);
+  }
+}
+@media (min-width: 1600px) {
+  header .hero-img {
+    background-image: url("../img/passport_big.jpg");
+  }
+  .plane {
     transform: scale(1);
   }
   .plane-seats .btn-submitSeats {
     transform: scale(1);
-    bottom: 50px;
   }
   .directions {
     background-image: url("../img/sky-gee33acaa0_1920.jpg");
